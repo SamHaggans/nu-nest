@@ -301,7 +301,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{showModal('Modal1')}}",
+                      "onClick": "{{POST_Sublet_listing.run(() => showModal('Listing_Success'), () => showAlert('Error! Check all required values are correct and try again','error'))}}",
                       "buttonColor": "#b91c1c",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -384,7 +384,7 @@
                       "isDisabled": false,
                       "key": "k5kix857wf",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 21,
                       "dynamicHeight": "FIXED",
@@ -561,7 +561,7 @@
                       "isDisabled": false,
                       "key": "k5kix857wf",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 60,
                       "dynamicHeight": "FIXED",
@@ -622,7 +622,7 @@
                       "isDisabled": false,
                       "key": "k5kix857wf",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 33,
                       "dynamicHeight": "FIXED",
@@ -683,7 +683,7 @@
                       "isDisabled": false,
                       "key": "k5kix857wf",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 59,
                       "dynamicHeight": "FIXED",
@@ -744,7 +744,7 @@
                       "isDisabled": false,
                       "key": "k5kix857wf",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 58,
                       "dynamicHeight": "AUTO_HEIGHT",
@@ -772,13 +772,7 @@
                       "zoomLevel": 50,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "widgetName": "MapLoc",
-                      "defaultMarkers": [
-                        {
-                          "lat": 25.122,
-                          "long": 50.132,
-                          "title": "Location1"
-                        }
-                      ],
+                      "defaultMarkers": "[\n  {\n    \"lat\": 42.339957347894234,\n    \"long\": -71.08866744800636,\n    \"title\": \"Northeastern University\"\n  }\n]",
                       "dynamicPropertyPathList": [],
                       "displayName": "Map",
                       "iconSVG": "/static/media/icon.ddde7d1b6b4d64050fde21a347260464.svg",
@@ -790,7 +784,11 @@
                       "animateLoading": true,
                       "allowZoom": true,
                       "parentColumnSpace": 6.015625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onCreateMarker"
+                        }
+                      ],
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
@@ -801,6 +799,7 @@
                         }
                       ],
                       "onMarkerClick": "",
+                      "onCreateMarker": "{{storeValue('Location')}}",
                       "enablePickLocation": true,
                       "mapCenter": {
                         "lat": 25.122,
@@ -813,7 +812,7 @@
                       "isDeprecated": false,
                       "rightColumn": 61,
                       "widgetId": "jxpges7cnw",
-                      "enableCreateMarker": false,
+                      "enableCreateMarker": true,
                       "minWidth": 450,
                       "isVisible": true,
                       "version": 1,
@@ -883,7 +882,7 @@
                       "isDisabled": false,
                       "key": "2p46lmba1k",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 59,
                       "defaultSelectedValues": [
@@ -993,7 +992,7 @@
                       ],
                       "isDisabled": false,
                       "key": "midkbj0rgu",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 58,
                       "isDefaultClickDisabled": true,
@@ -1055,7 +1054,7 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "Modal1",
+              "widgetName": "Listing_Success",
               "isCanvas": true,
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
@@ -1065,7 +1064,7 @@
                 "notification"
               ],
               "topRow": 0,
-              "bottomRow": 24,
+              "bottomRow": 240,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
