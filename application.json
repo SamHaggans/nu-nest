@@ -14,6 +14,22 @@
     },
     {
       "id": "Housing Account",
+      "isDefault": false,
+    },
+    {
+      "id": "New-Sublet",
+      "isDefault": false
+    },
+    {
+      "id": "Filter-Sublet",
+      "isDefault": false
+    },
+    {
+      "id": "User-Profile",
+      "isDefault": false
+    },
+    {
+      "id": "Messages",
       "isDefault": false
     }
   ],
