@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1370,
+          "bottomRow": 1310,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -212,7 +212,7 @@
                 "group"
               ],
               "topRow": 11,
-              "bottomRow": 137,
+              "bottomRow": 131,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -233,7 +233,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1260,
+                  "bottomRow": 1200,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -253,7 +253,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 6,
+                      "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -301,6 +301,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
+                      "onClick": "{{showAlert('Listing created!/','info')}}",
                       "buttonColor": "#b91c1c",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -308,12 +309,16 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 120,
-                      "bottomRow": 124,
+                      "topRow": 114,
+                      "bottomRow": 118,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 35,
                       "dynamicBindingPathList": [
                         {
@@ -353,8 +358,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 86,
-                      "bottomRow": 93,
+                      "topRow": 80,
+                      "bottomRow": 87,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -414,8 +419,8 @@
                         "dropdown",
                         "tags"
                       ],
-                      "topRow": 105,
-                      "bottomRow": 113,
+                      "topRow": 99,
+                      "bottomRow": 107,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_WIDGET_V2",
@@ -472,8 +477,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 89,
-                      "bottomRow": 93,
+                      "topRow": 83,
+                      "bottomRow": 87,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -530,8 +535,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 10,
+                      "topRow": 4,
+                      "bottomRow": 8,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -591,8 +596,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 13,
-                      "bottomRow": 21,
+                      "topRow": 11,
+                      "bottomRow": 19,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -652,8 +657,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 13,
-                      "bottomRow": 21,
+                      "topRow": 11,
+                      "bottomRow": 19,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -713,8 +718,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 94,
-                      "bottomRow": 104,
+                      "topRow": 88,
+                      "bottomRow": 98,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -777,8 +782,8 @@
                       "dynamicPropertyPathList": [],
                       "displayName": "Map",
                       "iconSVG": "/static/media/icon.ddde7d1b6b4d64050fde21a347260464.svg",
-                      "topRow": 26,
-                      "bottomRow": 66,
+                      "topRow": 23,
+                      "bottomRow": 63,
                       "parentRowSpace": 10,
                       "type": "MAP_WIDGET",
                       "hideCard": false,
@@ -825,8 +830,8 @@
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
                       "labelText": "Included amenities",
-                      "topRow": 66,
-                      "bottomRow": 85,
+                      "topRow": 63,
+                      "bottomRow": 79,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "CHECKBOX_GROUP_WIDGET",
@@ -911,8 +916,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 21,
-                      "bottomRow": 26,
+                      "topRow": 19,
+                      "bottomRow": 23,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -967,8 +972,8 @@
                       "searchTags": [
                         "upload"
                       ],
-                      "topRow": 113,
-                      "bottomRow": 120,
+                      "topRow": 107,
+                      "bottomRow": 114,
                       "parentRowSpace": 10,
                       "allowedFileTypes": [
                         "image/*",
