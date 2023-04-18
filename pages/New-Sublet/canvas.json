@@ -1065,20 +1065,21 @@
                 "notification"
               ],
               "topRow": 0,
-              "bottomRow": 240,
+              "bottomRow": 24,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 260,
+              "minHeight": 240,
               "animateLoading": true,
               "parentColumnSpace": 1,
-              "leftColumn": 0,
-              "dynamicBindingPathList": [
+              "dynamicTriggerPathList": [
                 {
-                  "key": "borderRadius"
+                  "key": "onClose"
                 }
               ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "widgetName": "Canvas4",
@@ -1232,10 +1233,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 18,
+                      "originalTopRow": 11,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 22,
+                      "originalBottomRow": 18,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     }
@@ -1269,7 +1270,8 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "onClose": "{{navigateTo('New-Sublet', {}, 'SAME_WINDOW')}}",
+              "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
               "width": 456,
               "minDynamicHeight": 24
