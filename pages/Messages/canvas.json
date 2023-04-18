@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 660,
+          "bottomRow": 650,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -167,7 +167,7 @@
                 "group"
               ],
               "topRow": 10,
-              "bottomRow": 66,
+              "bottomRow": 65,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -189,7 +189,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 560,
+                  "bottomRow": 550,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -209,7 +209,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 5,
+                      "bottomRow": 4,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -281,8 +281,8 @@
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 6,
-                      "bottomRow": 54,
+                      "topRow": 5,
+                      "bottomRow": 53,
                       "pageSize": 3,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET_V2",
@@ -570,9 +570,9 @@
                       "isLoading": false,
                       "responsiveBehavior": "fill",
                       "mainCanvasId": "rgvn3b4mw6",
-                      "originalTopRow": 5,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 53,
+                      "originalBottomRow": 54,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -616,7 +616,7 @@
               "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 66,
+              "originalBottomRow": 65,
               "minDynamicHeight": 10
             }
           ]
