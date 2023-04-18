@@ -1,8 +1,24 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Home",
       "isDefault": true
+    },
+    {
+      "id": "New-Sublet",
+      "isDefault": false
+    },
+    {
+      "id": "Filter-Sublet",
+      "isDefault": false
+    },
+    {
+      "id": "User-Profile",
+      "isDefault": false
+    },
+    {
+      "id": "Messages",
+      "isDefault": false
     }
   ],
   "viewMode": false,
