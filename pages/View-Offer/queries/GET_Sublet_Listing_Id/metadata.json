@@ -17,7 +17,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "View-Sublet",
+    "pageId": "View-Offer",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
@@ -54,7 +54,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "View-Sublet_GET_Sublet_Listing_Id",
+  "id": "View-Offer_GET_Sublet_Listing_Id",
   "deleted": false,
-  "gitSyncId": "643ea531c86f343d2817f5b9_643ea73bc86f343d2817f5c9"
+  "gitSyncId": "643ea531c86f343d2817f5b9_643eeb2749c6ae003c6b81c8"
 }

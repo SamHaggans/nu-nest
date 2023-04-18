@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1400,
+          "bottomRow": 1380,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -214,7 +214,7 @@
                 "group"
               ],
               "topRow": 10,
-              "bottomRow": 140,
+              "bottomRow": 138,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -235,7 +235,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1300,
+                  "bottomRow": 1280,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -271,8 +271,8 @@
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 65,
-                      "bottomRow": 99,
+                      "topRow": 63,
+                      "bottomRow": 97,
                       "pageSize": 2,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET_V2",
@@ -722,7 +722,7 @@
                       "iconSVG": "/static/media/icon.c98225eee52c61080cd91042d88545c8.svg",
                       "labelText": "NU Semesters",
                       "topRow": 20,
-                      "bottomRow": 31,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SWITCH_GROUP_WIDGET",
@@ -750,9 +750,9 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 20,
+                      "originalTopRow": 17,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 29,
+                      "originalBottomRow": 26,
                       "isInline": true,
                       "alignment": "left",
                       "minDynamicHeight": 4
@@ -764,8 +764,8 @@
                       "defaultMarkers": "[\n  {\n    \"lat\": 42.339957347894234,\n    \"long\": -71.08866744800636,\n    \"title\": \"Northeastern University\"\n  }\n]",
                       "displayName": "Map",
                       "iconSVG": "/static/media/icon.ddde7d1b6b4d64050fde21a347260464.svg",
-                      "topRow": 38,
-                      "bottomRow": 61,
+                      "topRow": 36,
+                      "bottomRow": 59,
                       "parentRowSpace": 10,
                       "type": "MAP_WIDGET",
                       "hideCard": false,
@@ -814,8 +814,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 31,
-                      "bottomRow": 35,
+                      "topRow": 29,
+                      "bottomRow": 33,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -871,8 +871,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 31,
-                      "bottomRow": 38,
+                      "topRow": 29,
+                      "bottomRow": 36,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -914,10 +914,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 29,
+                      "originalTopRow": 26,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 36,
+                      "originalBottomRow": 33,
                       "minDynamicHeight": 4
                     },
                     {
@@ -988,8 +988,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 61,
-                      "bottomRow": 65,
+                      "topRow": 59,
+                      "bottomRow": 63,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1028,10 +1028,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 59,
+                      "originalTopRow": 61,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 63,
+                      "originalBottomRow": 65,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -1040,7 +1040,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 100,
+                      "topRow": 98,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1137,7 +1137,7 @@
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "columnUpdatedAt": 1681828752238,
-                      "originalBottomRow": 126,
+                      "originalBottomRow": 61,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1159,7 +1159,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 128,
+                      "bottomRow": 126,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -1544,7 +1544,7 @@
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 98,
+                      "originalTopRow": 33,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     }
@@ -1583,7 +1583,7 @@
               "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 140,
+              "originalBottomRow": 77,
               "minDynamicHeight": 10
             }
           ]

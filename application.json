@@ -23,6 +23,14 @@
     {
       "id": "View-Sublet",
       "isDefault": false
+    },
+    {
+      "id": "Sublet-Listings",
+      "isDefault": false
+    },
+    {
+      "id": "View-Offer",
+      "isDefault": false
     }
   ],
   "viewMode": false,

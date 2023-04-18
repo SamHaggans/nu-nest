@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 810,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -167,7 +167,7 @@
                 "group"
               ],
               "topRow": 10,
-              "bottomRow": 81,
+              "bottomRow": 76,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -189,7 +189,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 710,
+                  "bottomRow": 660,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -209,7 +209,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 5,
+                      "bottomRow": 4,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -258,7 +258,7 @@
                     {
                       "boxShadow": "none",
                       "iconSVG": "/static/media/icon.108789d7165de30306435ab3c24e6cad.svg",
-                      "topRow": 22,
+                      "topRow": 20,
                       "labelWidth": 5,
                       "type": "PHONE_INPUT_WIDGET",
                       "animateLoading": true,
@@ -287,7 +287,7 @@
                       "searchTags": [
                         "call"
                       ],
-                      "bottomRow": 29,
+                      "bottomRow": 27,
                       "parentRowSpace": 10,
                       "defaultDialCode": "+1",
                       "autoFocus": false,
@@ -321,8 +321,8 @@
                       "searchTags": [
                         "boolean"
                       ],
-                      "topRow": 29,
-                      "bottomRow": 34,
+                      "topRow": 27,
+                      "bottomRow": 31,
                       "parentRowSpace": 10,
                       "type": "CHECKBOX_WIDGET",
                       "alignWidget": "LEFT",
@@ -371,8 +371,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 15,
-                      "bottomRow": 22,
+                      "topRow": 13,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -428,14 +428,14 @@
                       "searchTags": [
                         "stars"
                       ],
-                      "topRow": 64,
-                      "bottomRow": 68,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "RATE_WIDGET",
-                      "maxCount": 5,
+                      "maxCount": "5",
                       "hideCard": false,
                       "animateLoading": true,
-                      "isReadOnly": true,
+                      "isReadOnly": false,
                       "parentColumnSpace": 6.015625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 18,
@@ -457,7 +457,7 @@
                       "activeColor": "#b91c1c",
                       "size": "MEDIUM",
                       "maxDynamicHeight": 9000,
-                      "isAllowHalf": true,
+                      "isAllowHalf": false,
                       "originalBottomRow": 68,
                       "minDynamicHeight": 4,
                       "tooltips": [
@@ -494,8 +494,8 @@
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 46,
-                      "bottomRow": 64,
+                      "topRow": 42,
+                      "bottomRow": 60,
                       "pageSize": 1,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET_V2",
@@ -840,8 +840,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 41,
-                      "bottomRow": 46,
+                      "topRow": 38,
+                      "bottomRow": 42,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -891,7 +891,7 @@
                       "boxShadow": "none",
                       "dateFormat": "LL",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                      "topRow": 34,
+                      "topRow": 31,
                       "labelWidth": 5,
                       "type": "DATE_PICKER_WIDGET2",
                       "animateLoading": true,
@@ -922,7 +922,7 @@
                       "searchTags": [
                         "calendar"
                       ],
-                      "bottomRow": 41,
+                      "bottomRow": 38,
                       "shortcuts": false,
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -958,8 +958,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 10,
+                      "topRow": 5,
+                      "bottomRow": 9,
                       "parentRowSpace": 10,
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
@@ -1002,8 +1002,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 11,
+                      "topRow": 5,
+                      "bottomRow": 9,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1058,8 +1058,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 64,
-                      "bottomRow": 69,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1140,7 +1140,7 @@
               "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 81,
+              "originalBottomRow": 76,
               "minDynamicHeight": 10
             }
           ]

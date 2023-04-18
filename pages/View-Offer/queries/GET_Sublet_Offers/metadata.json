@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GET_Sublet_Listing_Id",
+    "name": "GET_Sublet_Offers",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/sublettees/sublet_listing/{{appsmith.URL.queryParams.id}}"
+        "url": "web:4000/subletters/sublet_listing/{{appsmith.URL.queryParams.id}}/offers"
       },
       "invalids": [],
       "messages": [],
@@ -17,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "View-Sublet",
+    "pageId": "View-Offer",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,12 +36,8 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -54,7 +49,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "View-Sublet_GET_Sublet_Listing_Id",
+  "id": "View-Offer_GET_Sublet_Offers",
   "deleted": false,
-  "gitSyncId": "643ea531c86f343d2817f5b9_643ea73bc86f343d2817f5c9"
+  "gitSyncId": "643ea531c86f343d2817f5b9_643eeb2749c6ae003c6b81c9"
 }

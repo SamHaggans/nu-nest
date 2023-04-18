@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 860,
+          "bottomRow": 920,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -214,7 +214,7 @@
                 "group"
               ],
               "topRow": 10,
-              "bottomRow": 86,
+              "bottomRow": 92,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -235,7 +235,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 760,
+                  "bottomRow": 820,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -715,61 +715,11 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "Button3Copy",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 14,
-                      "parentRowSpace": 10,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 9.765625,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 25,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Contact Offerer",
-                      "isDisabled": false,
-                      "key": "1e81nc61dk",
-                      "isDeprecated": false,
-                      "rightColumn": 41,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "qc7wedchm3",
-                      "minWidth": 120,
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "srxw8sfus3",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "hug",
-                      "originalTopRow": 9,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 13,
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
-                    },
-                    {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 31,
+                      "topRow": 33,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -810,6 +760,15 @@
                         },
                         {
                           "key": "primaryColumns.time_sent.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.buttonColor"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.borderRadius"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.boxShadow"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -847,26 +806,27 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681830079405,
-                      "originalBottomRow": 60,
+                      "columnUpdatedAt": 1681845099561,
+                      "originalBottomRow": 63,
                       "defaultSelectedRowIndices": [
                         0
                       ],
-                      "widgetName": "Table1",
+                      "widgetName": "OffersTable",
                       "defaultPageSize": 0,
                       "columnOrder": [
+                        "customColumn1",
                         "status",
-                        "end_date",
-                        "listing_id",
-                        "offer_id",
-                        "offering_user",
                         "rent",
                         "start_date",
+                        "end_date",
+                        "listing_id",
+                        "offering_user",
+                        "offer_id",
                         "time_sent"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 52,
+                      "bottomRow": 54,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -875,7 +835,11 @@
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "parentColumnSpace": 9.765625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "primaryColumns.customColumn1.onClick"
+                        }
+                      ],
                       "borderWidth": "1",
                       "primaryColumns": {
                         "status": {
@@ -895,7 +859,7 @@
                           "isCellEditable": false,
                           "isDerived": false,
                           "label": "status",
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( [\"Pending\", \"Accepted\",\n\t \"Rejected\"][currentRow[\"status\"]]))}}",
                           "validation": {},
                           "sticky": "",
                           "labelColor": "#FFFFFF"
@@ -924,7 +888,7 @@
                           "label": "end_date",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"end_date\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"end_date\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -953,7 +917,7 @@
                           "label": "listing_id",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"listing_id\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"listing_id\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -982,7 +946,7 @@
                           "label": "offer_id",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"offer_id\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"offer_id\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1011,7 +975,7 @@
                           "label": "offering_user",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"offering_user\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"offering_user\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1040,7 +1004,7 @@
                           "label": "rent",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rent\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rent\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1069,7 +1033,7 @@
                           "label": "start_date",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"start_date\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"start_date\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1098,10 +1062,44 @@
                           "label": "time_sent",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"time_sent\"]))}}",
+                          "computedValue": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"time_sent\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
+                        },
+                        "customColumn1": {
+                          "allowCellWrapping": false,
+                          "index": 8,
+                          "width": 150,
+                          "originalId": "customColumn1",
+                          "id": "customColumn1",
+                          "alias": "More Info",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "button",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "More Info",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "",
+                          "sticky": "",
+                          "validation": {},
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF",
+                          "buttonColor": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                          "borderRadius": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                          "boxShadow": "{{OffersTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                          "customAlias": "",
+                          "buttonLabel": "View",
+                          "onClick": "{{navigateTo('View-Offer',{listing_id: appsmith.URL.queryParams.id, offer_id:OffersTable.triggeredRow.offer_id}, 'SAME_WINDOW')}}"
                         }
                       },
                       "key": "ugexnujato",
@@ -1119,7 +1117,7 @@
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 40,
+                      "originalTopRow": 42,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     },
@@ -1132,8 +1130,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 27,
-                      "bottomRow": 31,
+                      "topRow": 28,
+                      "bottomRow": 32,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1172,10 +1170,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 36,
+                      "originalTopRow": 37,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 40,
+                      "originalBottomRow": 41,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -1189,8 +1187,8 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 52,
-                      "bottomRow": 74,
+                      "topRow": 58,
+                      "bottomRow": 80,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -1589,10 +1587,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 52,
+                      "originalTopRow": 67,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 74,
+                      "originalBottomRow": 89,
                       "minDynamicHeight": 10
                     }
                   ],
@@ -1630,7 +1628,7 @@
               "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 86,
+              "originalBottomRow": 101,
               "minDynamicHeight": 10
             }
           ]
