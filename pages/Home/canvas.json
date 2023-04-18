@@ -797,7 +797,7 @@
                         "textarea"
                       ],
                       "topRow": 0,
-                      "bottomRow": 5,
+                      "bottomRow": 7,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
