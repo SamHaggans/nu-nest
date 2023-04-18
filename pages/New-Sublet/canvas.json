@@ -204,7 +204,7 @@
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
-              "widgetName": "Form1",
+              "widgetName": "SubletForm",
               "isCanvas": true,
               "displayName": "Form",
               "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
@@ -349,7 +349,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1",
+                      "widgetName": "Rent",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -410,7 +410,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "MultiSelect1",
+                      "widgetName": "Neighborhoods",
                       "isFilterable": true,
                       "displayName": "MultiSelect",
                       "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
@@ -426,7 +426,7 @@
                       "type": "MULTI_SELECT_WIDGET_V2",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `[]`))(MultiSelect1.options, MultiSelect1.serverSideFiltering) }}",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `[]`))(Neighborhoods.options, Neighborhoods.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 6.015625,
                       "dynamicTriggerPathList": [],
@@ -526,7 +526,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input2",
+                      "widgetName": "Address",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -587,7 +587,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input3",
+                      "widgetName": "City",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -648,7 +648,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input4",
+                      "widgetName": "Zip",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -709,7 +709,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input5",
+                      "widgetName": "Description",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -771,7 +771,7 @@
                     {
                       "zoomLevel": 50,
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "Map1",
+                      "widgetName": "MapLoc",
                       "defaultMarkers": [
                         {
                           "lat": 25.122,
@@ -826,7 +826,7 @@
                       "originalBottomRow": 66
                     },
                     {
-                      "widgetName": "CheckboxGroup1",
+                      "widgetName": "Amenities",
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
                       "labelText": "Included amenities",
@@ -965,7 +965,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "FilePicker1",
+                      "widgetName": "Images",
                       "buttonColor": "#b91c1c",
                       "displayName": "FilePicker",
                       "iconSVG": "/static/media/icon.7c5ad9c357928c6ff5701bf51a56c2e5.svg",
@@ -1270,7 +1270,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onClose": "{{navigateTo('New-Sublet', {}, 'SAME_WINDOW')}}",
+              "onClose": "{{resetWidget(\"SubletForm\",true)}}",
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
               "width": 456,
