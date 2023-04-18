@@ -23,6 +23,9 @@ Sam Haggans - haggans.s@northeastern.edu
 ## NOTE
 This project was created as part of our CS 3200 database design course.
 
+The backend code for this application can be found here:
+https://github.com/SamHaggans/nu-nest-backend.git
+
 ![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_white.png)
 
 This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
