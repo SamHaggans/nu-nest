@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "New-Sublet",
-    "slug": "new-sublet",
+    "name": "New-Edit-Sublet",
+    "slug": "new-edit-sublet",
     "layouts": [
       {
         "viewMode": false,
@@ -1280,7 +1280,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "New-Sublet",
+        "id": "New-Edit-Sublet",
         "deleted": false,
         "policies": [],
         "userPermissions": []

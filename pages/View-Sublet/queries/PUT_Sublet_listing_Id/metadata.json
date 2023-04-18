@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "POST_Sublet_listing",
+    "name": "PUT_Sublet_listing_Id",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -15,7 +15,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "New-Sublet",
+    "pageId": "View-Sublet",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -27,9 +27,15 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "id",
+          "value": "{{String()}}"
+        }
+      ],
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,22 +49,21 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "headers[0].value"
-      },
-      {
-        "key": "headers[1].value"
+        "key": "queryParameters[0].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "String()"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "New-Sublet_POST_Sublet_listing",
+  "id": "View-Sublet_PUT_Sublet_listing_Id",
   "deleted": false,
-  "gitSyncId": "643e1a89eefe5b1f63f76de1_643ef09524e3b61452ed0f5e"
+  "gitSyncId": "643e1a89eefe5b1f63f76de1_643ef27a24e3b61452ed0f8c"
 }
