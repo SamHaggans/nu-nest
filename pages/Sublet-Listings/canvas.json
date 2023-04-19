@@ -309,6 +309,9 @@
                         },
                         {
                           "key": "primaryColumns.customColumn1.boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.bedroom_count.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -346,7 +349,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681828752238,
+                      "columnUpdatedAt": 1681913173347,
                       "originalBottomRow": 34,
                       "defaultSelectedRowIndices": [
                         0
@@ -365,7 +368,8 @@
                         "rent",
                         "roommate_count",
                         "start_date",
-                        "zipcode"
+                        "zipcode",
+                        "bedroom_count"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -737,6 +741,35 @@
                           "customAlias": "",
                           "buttonLabel": "See in Detail",
                           "onClick": "{{navigateTo('View-Sublet',{id: ListingsTable.triggeredRow.listing_id}, 'SAME_WINDOW')}}"
+                        },
+                        "bedroom_count": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "bedroom_count",
+                          "id": "bedroom_count",
+                          "alias": "bedroom_count",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "bedroom_count",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{ListingsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bedroom_count\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "ugexnujato",
@@ -849,7 +882,7 @@
               "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 83,
+              "originalBottomRow": 97,
               "minDynamicHeight": 10
             }
           ]

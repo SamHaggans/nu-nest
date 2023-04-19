@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/sublettees/sublet_listing/{{appsmith.URL.queryParams.listing_id}}/offer/{{appsmith.URL.queryParams.offer_id}}"
+        "url": "web:4000/sublettees//sublet_listing/offer/edit/{{appsmith.URL.queryParams.offer_id}}"
       },
       "invalids": [],
       "messages": [],
@@ -45,10 +45,10 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
+        "key": "body"
       },
       {
-        "key": "body"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
@@ -56,7 +56,6 @@
     "messages": [],
     "jsonPathKeys": [
       "Form1.data",
-      "appsmith.URL.queryParams.listing_id",
       "appsmith.URL.queryParams.offer_id"
     ],
     "userSetOnLoad": false,
