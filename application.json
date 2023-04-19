@@ -5,15 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "New-Edit-Sublet",
+      "id": "New-Sublet",
       "isDefault": false
     },
     {
       "id": "User-Profile",
-      "isDefault": false
-    },
-    {
-      "id": "Messages",
       "isDefault": false
     },
     {
@@ -26,6 +22,10 @@
     },
     {
       "id": "View-Offer",
+      "isDefault": false
+    },
+    {
+      "id": "Edit-Sublet",
       "isDefault": false
     }
   ],

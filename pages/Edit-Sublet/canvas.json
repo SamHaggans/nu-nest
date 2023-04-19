@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "New-Edit-Sublet",
-    "slug": "new-edit-sublet",
+    "name": "Edit-Sublet",
+    "slug": "edit-sublet",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1310,
+          "bottomRow": 820,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -212,7 +212,7 @@
                 "group"
               ],
               "topRow": 11,
-              "bottomRow": 131,
+              "bottomRow": 82,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -233,7 +233,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1200,
+                  "bottomRow": 710,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -274,7 +274,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "List Your Sublet",
+                      "text": "Edit Sublet Listing",
                       "key": "z4uic9tc87",
                       "isDeprecated": false,
                       "rightColumn": 34,
@@ -298,10 +298,10 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "resetFormOnClick": true,
+                      "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{POST_Sublet_listing.run(() => showModal('Listing_Success'), () => showAlert('Error! Check all required values are correct and try again','error'))}}",
+                      "onClick": "{{PUT_Sublet_listing.run(() => showAlert('Success!','success'), () => showAlert('Error! Make sure all entries are filled correctly.','error'))}}",
                       "buttonColor": "#b91c1c",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -309,8 +309,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 114,
-                      "bottomRow": 118,
+                      "topRow": 65,
+                      "bottomRow": 69,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -319,17 +319,17 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 35,
+                      "leftColumn": 17,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "List Sublet",
+                      "text": "Submit",
                       "isDisabled": false,
                       "key": "tx2mo4zhe1",
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 43,
                       "isDefaultClickDisabled": true,
                       "widgetId": "0m7lncyapb",
                       "minWidth": 120,
@@ -340,33 +340,32 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 114,
-                      "disabledWhenInvalid": true,
+                      "originalTopRow": 56,
+                      "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 118,
+                      "originalBottomRow": 60,
                       "buttonVariant": "TERTIARY",
                       "placement": "CENTER"
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Rent",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "widgetName": "rent",
+                      "displayName": "Currency Input",
+                      "iconSVG": "/static/media/icon.f312efcb48ce4dafb08c20291635b30b.svg",
                       "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
+                        "amount",
+                        "total"
                       ],
-                      "topRow": 80,
-                      "bottomRow": 87,
+                      "topRow": 6,
+                      "bottomRow": 13,
+                      "defaultCurrencyCode": "USD",
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
+                      "type": "CURRENCY_INPUT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
+                      "parentColumnSpace": 9.765625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
@@ -376,59 +375,61 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
                       "labelStyle": "",
-                      "inputType": "NUMBER",
                       "isDisabled": false,
-                      "key": "k5kix857wf",
+                      "key": "w0wqeg408x",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 22,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "01jtlnagp4",
+                      "widgetId": "xzancb6nrk",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
                       "minWidth": 450,
                       "isVisible": true,
-                      "label": "Rent",
-                      "version": 2,
+                      "label": "Rent per month\n\n",
+                      "allowCurrencyChange": false,
+                      "version": 1,
                       "parentId": "3zue1lbkeh",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 80,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 87,
+                      "decimals": 0,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{GET_Sublet_Listing_Id.data[0].rent}}",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Neighborhoods",
-                      "isFilterable": true,
-                      "displayName": "MultiSelect",
-                      "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-                      "labelText": "Neighborhood(s)",
-                      "searchTags": [
-                        "dropdown",
-                        "tags"
+                      "widgetName": "furnished_status",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultSwitchState"
+                        }
                       ],
-                      "topRow": 99,
-                      "bottomRow": 107,
+                      "displayName": "Switch",
+                      "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 14,
+                      "bottomRow": 18,
                       "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "type": "MULTI_SELECT_WIDGET_V2",
-                      "serverSideFiltering": false,
+                      "type": "SWITCH_WIDGET",
+                      "alignWidget": "LEFT",
                       "hideCard": false,
-                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `[]`))(Neighborhoods.options, Neighborhoods.serverSideFiltering) }}",
                       "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
+                      "parentColumnSpace": 9.765625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
@@ -436,97 +437,30 @@
                           "key": "accentColor"
                         },
                         {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultOptionValue"
+                          "key": "defaultSwitchState"
                         }
                       ],
-                      "labelPosition": "Top",
-                      "options": "[\n  {\n    \"label\": \"Allston\",\n    \"value\": \"ALLSTON\"\n  },\n  {\n    \"label\": \"Back Bay\",\n    \"value\": \"BACKBAY\"\n  },\n  {\n    \"label\": \"Mission Hill\",\n    \"value\": \"MISSIONHILL\"\n  },\n\t  {\n    \"label\": \"Roxbury\",\n    \"value\": \"ROXBURY\"\n  },\n\t{\n    \"label\": \"Mattapan\",\n    \"value\": \"MATTAPAN\"\n  },\n\t{\n    \"label\": \"Dorchester\",\n    \"value\": \"DORCHESTER\"\n  },\n\t{\n    \"label\": \"Fenway-Kenmore\",\n    \"value\": \"FENWAYKENMORE\"\n  },\n\t{\n\t\"label\": \"Jamaica Plain\",\n\t\"value\": \"JP\"\n\t},\n\t{\n\t\"label\": \"South End\",\n\t\"value\": \"SOUTHEND\"\n\t},\n\t{\n\t\"label\": \"Somerville\",\n\t\"value\": \"SOMERVILLE\"\n\t},\n\t{\n\t\"label\": \"Brookline\",\n\t\"value\": \"BROOKLINE\"\n\t},\n\t{\n\t\"label\": \"Cambridge\",\n\t\"value\": \"CAMBRIDGE\"\n\t}\n]",
-                      "placeholderText": "Select option(s)",
+                      "labelPosition": "Left",
                       "isDisabled": false,
-                      "key": "cfl2e0p7pr",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "key": "z1aieuy3x6",
                       "isDeprecated": false,
-                      "rightColumn": 58,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "4zsea59ciq",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "3zue1lbkeh",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 99,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 107,
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "widgetName": "Text6",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 83,
-                      "bottomRow": 87,
-                      "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "parentColumnSpace": 6.015625,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 21,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "truncateButtonColor"
-                        },
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "/month",
-                      "key": "z4uic9tc87",
-                      "isDeprecated": false,
-                      "rightColumn": 37,
-                      "textAlign": "LEFT",
+                      "rightColumn": 14,
                       "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "rg2oscz736",
-                      "minWidth": 450,
+                      "widgetId": "v4py8sf8p8",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "fontStyle": "",
-                      "textColor": "#231F20",
+                      "label": "Furnished?",
+                      "defaultSwitchState": "{{[true, false][GET_Sublet_Listing_Id.data[0].furnished_status]}}",
                       "version": 1,
                       "parentId": "3zue1lbkeh",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 83,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 87,
-                      "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Address",
+                      "widgetName": "zipcode",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -535,59 +469,60 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 4,
-                      "bottomRow": 8,
+                      "topRow": 6,
+                      "bottomRow": 13,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
+                      "parentColumnSpace": 9.765625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 24,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
-                      "key": "k5kix857wf",
+                      "key": "ogyjnl5mop",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 60,
+                      "rightColumn": 44,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "fx328ekohd",
+                      "widgetId": "729gx3k98w",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
                       "minWidth": 450,
                       "isVisible": true,
-                      "label": "Address (will not be publicly visible to browsers)",
+                      "label": "Zipcode",
                       "version": 2,
                       "parentId": "3zue1lbkeh",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 10,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{GET_Sublet_Listing_Id.data[0].zipcode}}",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "City",
+                      "widgetName": "street",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -596,37 +531,102 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 11,
-                      "bottomRow": 19,
+                      "topRow": 6,
+                      "bottomRow": 13,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
+                      "parentColumnSpace": 9.765625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 45,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
-                      "key": "k5kix857wf",
+                      "key": "ogyjnl5mop",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 33,
+                      "rightColumn": 64,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "2ovc4ubix5",
+                      "widgetId": "am5ovbr6h7",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "label": "Street",
+                      "version": 2,
+                      "parentId": "3zue1lbkeh",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{GET_Sublet_Listing_Id.data[0].street}}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "city",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 14,
+                      "bottomRow": 21,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.765625,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 45,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "ogyjnl5mop",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "h0f8p5yo4w",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
                       "minWidth": 450,
@@ -638,78 +638,284 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 21,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{GET_Sublet_Listing_Id.data[0].city}}",
                       "minDynamicHeight": 4
                     },
                     {
-                      "boxShadow": "none",
-                      "widgetName": "Zip",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "widgetName": "roommate_count",
+                      "defaultValue": "{{GET_Sublet_Listing_Id.data[0].roommate_count}}",
+                      "displayName": "Number Slider",
+                      "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+                      "tooltipAlwaysOn": false,
+                      "labelText": "Roommates",
                       "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
+                        "range"
                       ],
-                      "topRow": 11,
-                      "bottomRow": 19,
+                      "topRow": 22,
+                      "bottomRow": 30,
                       "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
+                      "labelWidth": "11",
+                      "type": "NUMBER_SLIDER_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
+                      "min": "0",
+                      "parentColumnSpace": 9.765625,
                       "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 39,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         },
                         {
-                          "key": "borderRadius"
+                          "key": "defaultValue"
                         }
                       ],
-                      "labelPosition": "Top",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
+                      "shouldTruncate": false,
+                      "labelPosition": "Left",
                       "isDisabled": false,
-                      "key": "k5kix857wf",
+                      "key": "fo31to00gq",
                       "labelTextSize": "0.875rem",
-                      "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 59,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "jvoyx1ooy5",
+                      "rightColumn": 62,
+                      "max": "20",
+                      "widgetId": "f0ka0nawpb",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "showStepArrows": false,
-                      "minWidth": 450,
                       "isVisible": true,
-                      "label": "Zip",
-                      "version": 2,
+                      "marks": [
+                        {
+                          "value": 25,
+                          "label": "25%"
+                        },
+                        {
+                          "value": 50,
+                          "label": "50%"
+                        },
+                        {
+                          "value": 75,
+                          "label": "75%"
+                        }
+                      ],
+                      "sliderSize": "s",
+                      "shouldScroll": false,
+                      "version": 1,
                       "parentId": "3zue1lbkeh",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 13,
+                      "step": 1,
+                      "showMarksLabel": true
+                    },
+                    {
+                      "widgetName": "bathroom_count",
+                      "defaultValue": "{{GET_Sublet_Listing_Id.data[0].bathroom_count}}",
+                      "displayName": "Number Slider",
+                      "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+                      "tooltipAlwaysOn": false,
+                      "labelText": "Bathrooms",
+                      "searchTags": [
+                        "range"
+                      ],
+                      "topRow": 31,
+                      "bottomRow": 39,
+                      "parentRowSpace": 10,
+                      "labelWidth": "11",
+                      "type": "NUMBER_SLIDER_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "min": "0",
+                      "parentColumnSpace": 9.765625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "defaultValue"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "labelPosition": "Left",
+                      "isDisabled": false,
+                      "key": "fo31to00gq",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "max": "20",
+                      "widgetId": "6jr3716x05",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "marks": [
+                        {
+                          "value": 25,
+                          "label": "25%"
+                        },
+                        {
+                          "value": 50,
+                          "label": "50%"
+                        },
+                        {
+                          "value": 75,
+                          "label": "75%"
+                        }
+                      ],
+                      "sliderSize": "s",
+                      "shouldScroll": false,
+                      "version": 1,
+                      "parentId": "3zue1lbkeh",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "step": 1,
+                      "showMarksLabel": true
+                    },
+                    {
+                      "boxShadow": "none",
+                      "dateFormat": "YYYY-MM-DD",
+                      "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                      "topRow": 39,
+                      "labelWidth": 5,
+                      "type": "DATE_PICKER_WIDGET2",
+                      "animateLoading": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "datePickerType": "DATE_PICKER",
+                      "version": 2,
+                      "isLoading": false,
+                      "timePrecision": "minute",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "closeOnSelection": true,
+                      "widgetName": "start_date",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "minDate"
+                        },
+                        {
+                          "key": "maxDate"
+                        },
+                        {
+                          "key": "dateFormat"
+                        },
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "bottomRow": 46,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 9.765625,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "key": "jtji6hcf78",
+                      "labelTextSize": "0.875rem",
+                      "defaultDate": "{{GET_Sublet_Listing_Id.data[0].start_date}}",
+                      "isDeprecated": false,
+                      "rightColumn": 21,
+                      "widgetId": "b658ya2j37",
+                      "minWidth": 450,
+                      "label": "Start Date",
+                      "parentId": "3zue1lbkeh",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "responsiveBehavior": "fill",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 21,
-                      "iconAlign": "left",
-                      "defaultText": "",
+                      "firstDayOfWeek": "0",
+                      "maxDate": "2121-12-31T18:29:00.000Z",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Description",
+                      "dateFormat": "YYYY-MM-DD",
+                      "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                      "topRow": 39,
+                      "labelWidth": 5,
+                      "type": "DATE_PICKER_WIDGET2",
+                      "animateLoading": true,
+                      "leftColumn": 22,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "datePickerType": "DATE_PICKER",
+                      "version": 2,
+                      "isLoading": false,
+                      "timePrecision": "minute",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "closeOnSelection": true,
+                      "widgetName": "end_date",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "bottomRow": 46,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 9.765625,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "key": "jtji6hcf78",
+                      "labelTextSize": "0.875rem",
+                      "defaultDate": "{{GET_Sublet_Listing_Id.data[0].end_date}}",
+                      "isDeprecated": false,
+                      "rightColumn": 42,
+                      "widgetId": "6xgargfv4v",
+                      "minWidth": 450,
+                      "label": "End Date",
+                      "parentId": "3zue1lbkeh",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "responsiveBehavior": "fill",
+                      "maxDynamicHeight": 9000,
+                      "firstDayOfWeek": 0,
+                      "maxDate": "2121-12-31T18:29:00.000Z",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "description",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -718,302 +924,58 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 88,
-                      "bottomRow": 98,
+                      "topRow": 46,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
+                      "parentColumnSpace": 9.765625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
                       "labelStyle": "",
                       "inputType": "MULTI_LINE_TEXT",
                       "isDisabled": false,
-                      "key": "k5kix857wf",
+                      "key": "ogyjnl5mop",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 62,
                       "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "6w18vgazes",
+                      "widgetId": "x36e1b033e",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
                       "minWidth": 450,
                       "isVisible": true,
-                      "label": "Short description",
+                      "label": "Description",
                       "version": 2,
                       "parentId": "3zue1lbkeh",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 88,
+                      "originalTopRow": 46,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 98,
+                      "originalBottomRow": 56,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{GET_Sublet_Listing_Id.data[0].description}}",
                       "minDynamicHeight": 4
-                    },
-                    {
-                      "zoomLevel": 50,
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "MapLoc",
-                      "defaultMarkers": "[\n  {\n    \"lat\": 42.339957347894234,\n    \"long\": -71.08866744800636,\n    \"title\": \"Northeastern University\"\n  }\n]",
-                      "dynamicPropertyPathList": [],
-                      "displayName": "Map",
-                      "iconSVG": "/static/media/icon.ddde7d1b6b4d64050fde21a347260464.svg",
-                      "topRow": 23,
-                      "bottomRow": 63,
-                      "parentRowSpace": 10,
-                      "type": "MAP_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "allowZoom": true,
-                      "parentColumnSpace": 6.015625,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onCreateMarker"
-                        }
-                      ],
-                      "leftColumn": 2,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "boxShadow"
-                        }
-                      ],
-                      "onMarkerClick": "",
-                      "onCreateMarker": "{{storeValue('Location')}}",
-                      "enablePickLocation": true,
-                      "mapCenter": {
-                        "lat": 25.122,
-                        "long": 50.132
-                      },
-                      "isClickedMarkerCentered": true,
-                      "isDisabled": false,
-                      "enableSearch": true,
-                      "key": "rfqy3iz0nf",
-                      "isDeprecated": false,
-                      "rightColumn": 61,
-                      "widgetId": "jxpges7cnw",
-                      "enableCreateMarker": true,
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "3zue1lbkeh",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 26,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 66
-                    },
-                    {
-                      "widgetName": "Amenities",
-                      "displayName": "Checkbox Group",
-                      "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
-                      "labelText": "Included amenities",
-                      "topRow": 63,
-                      "bottomRow": 79,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "type": "CHECKBOX_GROUP_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Top",
-                      "options": [
-                        {
-                          "label": "Wifi",
-                          "value": "WIFI"
-                        },
-                        {
-                          "label": "Electricity",
-                          "value": "ELECTRIC"
-                        },
-                        {
-                          "label": "Heat",
-                          "value": "HEAT"
-                        },
-                        {
-                          "label": "A/C",
-                          "value": "AC"
-                        },
-                        {
-                          "label": "On-site laundry",
-                          "value": "LAUNDRY"
-                        },
-                        {
-                          "label": "Pet-friendly",
-                          "value": "PETS"
-                        },
-                        {
-                          "label": "Elevator",
-                          "value": "ELEVATOR"
-                        },
-                        {
-                          "label": "Parking available",
-                          "value": "PARKING"
-                        }
-                      ],
-                      "isDisabled": false,
-                      "key": "2p46lmba1k",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 59,
-                      "defaultSelectedValues": [
-                        "BLUE"
-                      ],
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "ece6pye7dt",
-                      "accentColor": "#b91c1c",
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "version": 2,
-                      "parentId": "3zue1lbkeh",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 63,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 79,
-                      "isInline": true,
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "widgetName": "Text7",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 19,
-                      "bottomRow": 23,
-                      "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "parentColumnSpace": 6.015625,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "truncateButtonColor"
-                        },
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "General location",
-                      "key": "z4uic9tc87",
-                      "isDeprecated": false,
-                      "rightColumn": 31,
-                      "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "hth6kuodgl",
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "fontStyle": "",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "3zue1lbkeh",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 21,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 26,
-                      "fontSize": "1rem",
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Images",
-                      "buttonColor": "#b91c1c",
-                      "displayName": "FilePicker",
-                      "iconSVG": "/static/media/icon.7c5ad9c357928c6ff5701bf51a56c2e5.svg",
-                      "searchTags": [
-                        "upload"
-                      ],
-                      "topRow": 107,
-                      "bottomRow": 114,
-                      "parentRowSpace": 10,
-                      "allowedFileTypes": [
-                        "image/*",
-                        "image/jpeg",
-                        ".png"
-                      ],
-                      "type": "FILE_PICKER_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 6.015625,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "isDisabled": false,
-                      "key": "midkbj0rgu",
-                      "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 58,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "z50e1ea1k1",
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "label": "Upload Images",
-                      "maxFileSize": 5,
-                      "dynamicTyping": true,
-                      "version": 1,
-                      "fileDataType": "Base64",
-                      "parentId": "3zue1lbkeh",
-                      "selectedFiles": [],
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "originalTopRow": 107,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 114,
-                      "files": [],
-                      "maxNumFiles": 1
                     }
                   ],
                   "key": "8bkahhzw7d",
@@ -1049,7 +1011,7 @@
               "originalTopRow": 11,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 131,
+              "originalBottomRow": 73,
               "minDynamicHeight": 10
             },
             {
@@ -1277,10 +1239,23 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Edit-Sublet_GET_Sublet_Listing_Id",
+              "name": "GET_Sublet_Listing_Id",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "New-Edit-Sublet",
+        "id": "Edit-Sublet",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -1291,5 +1266,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "643e1a89eefe5b1f63f76de1_643e1b5c24e3b61452ecfdb0"
+  "gitSyncId": "643ea531c86f343d2817f5b9_643f6c7026a8d50d0ab3556c"
 }

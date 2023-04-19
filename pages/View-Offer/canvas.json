@@ -214,7 +214,7 @@
                 "group"
               ],
               "topRow": 10,
-              "bottomRow": 34,
+              "bottomRow": 37,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -235,7 +235,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 240,
+                  "bottomRow": 270,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -256,7 +256,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 22,
+                      "bottomRow": 25,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -277,7 +277,7 @@
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 220,
+                          "bottomRow": 250,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -345,7 +345,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "SubmitButton",
-                              "onClick": "{{POST_Sublet_Offer.run(() => showAlert('Success!','success'), () => showAlert('Error!','error'))}}",
+                              "onClick": "{{PUT_Sublet_Offer.run(() => showAlert('Success!','success'), () => showAlert('Error!','error'))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -353,8 +353,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 16,
-                              "bottomRow": 20,
+                              "topRow": 19,
+                              "bottomRow": 23,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -363,7 +363,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 0,
+                              "leftColumn": 5,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -376,7 +376,7 @@
                               "isDisabled": false,
                               "key": "z6tz14w02x",
                               "isDeprecated": false,
-                              "rightColumn": 16,
+                              "rightColumn": 21,
                               "isDefaultClickDisabled": true,
                               "widgetId": "rb34fdwqkq",
                               "minWidth": 120,
@@ -387,8 +387,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "hug",
+                              "originalTopRow": 20,
                               "disabledWhenInvalid": true,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "originalBottomRow": 24,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
@@ -590,6 +592,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button3",
+                              "onClick": "{{DELETE_Sublet_Offer.run(() => showAlert('Success!','success'), () => showAlert('Error!','error'))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -597,15 +600,19 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 16,
-                              "bottomRow": 20,
+                              "topRow": 19,
+                              "bottomRow": 23,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 9.300537109375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 16,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 26,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -618,7 +625,7 @@
                               "isDisabled": false,
                               "key": "1g3gux284u",
                               "isDeprecated": false,
-                              "rightColumn": 32,
+                              "rightColumn": 42,
                               "isDefaultClickDisabled": true,
                               "widgetId": "8rht0zah89",
                               "minWidth": 120,
@@ -635,100 +642,47 @@
                               "placement": "CENTER"
                             },
                             {
-                              "resetFormOnClick": false,
                               "boxShadow": "none",
-                              "widgetName": "Button4",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "widgetName": "status",
+                              "displayName": "Switch",
+                              "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
                               "searchTags": [
-                                "click",
-                                "submit"
+                                "boolean"
                               ],
-                              "topRow": 16,
-                              "bottomRow": 20,
+                              "topRow": 14,
+                              "bottomRow": 18,
                               "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
+                              "type": "SWITCH_WIDGET",
+                              "alignWidget": "LEFT",
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 9.300537109375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 32,
+                              "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "buttonColor"
-                                },
-                                {
-                                  "key": "borderRadius"
+                                  "key": "accentColor"
                                 }
                               ],
-                              "text": "Reject Offer",
+                              "labelPosition": "Left",
                               "isDisabled": false,
-                              "key": "1g3gux284u",
+                              "key": "z1aieuy3x6",
                               "isDeprecated": false,
-                              "rightColumn": 48,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "vjzd3aarlk",
-                              "minWidth": 120,
+                              "rightColumn": 21,
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "1qe77m37oa",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
-                              "recaptchaType": "V3",
+                              "label": "Accept Offer\n",
+                              "defaultSwitchState": true,
                               "version": 1,
                               "parentId": "6drbo7v26b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "responsiveBehavior": "hug",
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "PRIMARY",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button5",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 16,
-                              "bottomRow": 20,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 9.300537109375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 48,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "Accept Offer",
-                              "isDisabled": false,
-                              "key": "1g3gux284u",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "pn96ike8u3",
-                              "minWidth": 120,
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "6drbo7v26b",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "hug",
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "PRIMARY",
-                              "placement": "CENTER"
+                              "originalTopRow": 15,
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 20,
+                              "minDynamicHeight": 4
                             }
                           ],
                           "key": "ispm0mwxlv",
@@ -764,7 +718,7 @@
                       "originalTopRow": 0,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 22,
+                      "originalBottomRow": 25,
                       "minDynamicHeight": 10
                     }
                   ],
@@ -802,7 +756,7 @@
               "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 34,
+              "originalBottomRow": 37,
               "minDynamicHeight": 10
             }
           ]

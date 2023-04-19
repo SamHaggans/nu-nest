@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "POST_Sublet_Offer",
+    "name": "DELETE_User_Report",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/sublettees/sublet_listing/1/offer"
+        "url": "web:4000/subletters/report/{{ReportsTable.triggeredRow.report_id}}"
       },
       "invalids": [],
       "messages": [],
@@ -17,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "View-Offer",
+    "pageId": "User-Profile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -30,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Form1.data}}",
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -46,21 +45,21 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Form1.data"
+      "ReportsTable.triggeredRow.report_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "View-Offer_POST_Sublet_Offer",
+  "id": "User-Profile_DELETE_User_Report",
   "deleted": false,
-  "gitSyncId": "643ea531c86f343d2817f5b9_643eeb2749c6ae003c6b81ca"
+  "gitSyncId": "643ea531c86f343d2817f5b9_643f91dd26a8d50d0ab35599"
 }
