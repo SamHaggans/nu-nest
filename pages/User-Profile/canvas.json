@@ -643,7 +643,7 @@
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Northeastern Student?",
-                              "defaultSwitchState": "{{GET_Housing_Account_Id.data[0].student_status == 0}}",
+                              "defaultSwitchState": "{{GET_Housing_Account_Id.data[0].student_status == 1}}",
                               "version": 1,
                               "parentId": "1912h25jvv",
                               "renderMode": "CANVAS",
