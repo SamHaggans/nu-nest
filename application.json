@@ -5,11 +5,7 @@
       "isDefault": true
     },
     {
-      "id": "New-Sublet",
-      "isDefault": false
-    },
-    {
-      "id": "filter-not-in-use",
+      "id": "New-Edit-Sublet",
       "isDefault": false
     },
     {
