@@ -769,8 +769,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "appsmith.URL.queryParams.offer_id",
-                "appsmith.URL.queryParams.listing_id"
+                "appsmith.URL.queryParams.listing_id",
+                "appsmith.URL.queryParams.offer_id"
               ],
               "timeoutInMillisecond": 10000
             }
