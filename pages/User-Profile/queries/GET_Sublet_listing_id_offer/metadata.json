@@ -27,6 +27,7 @@
           "value": "{{Sublet_name.text}}"
         }
       ],
+      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
